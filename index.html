@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width:376px)">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <title>Interior Consultant Master</title>
+
+</head>
+<body>
+    <header>
+        
+        <div class="primary-menu" id="primaryMenu">
+            <div class="logo">THIS INTERIOR</div>
+            <ul class="items">
+                <li class="item">Home</li>
+                <li class="item">Collection</li>
+                <li class="item">About</li>
+                <li class="item">Contact</li>
+            </ul>
+        </div>
+        <div class="mobil-menu">
+            <div class="logo">THIS INTERIOR</div>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <ul class="items">
+                    <li class="item">Home</li>
+                    <li class="item">Collection</li>
+                    <li class="item">About</li>
+                    <li class="item">Contact</li>
+                </ul>
+                <span id="close" onclick="toggle()"><i class="icon-remove"></i></span>
+            </div>
+            <span id="open" onclick="toggle()"><i class="icon-reorder fa-7x"></i></span>     
+        </div>
+        <script >
+            var openButton = document.getElementById("open");
+            var hamburgerMenu = document.getElementById("hamburgerMenu");
+            var isOpened = false;
+            function toggle(){
+                 isOpened = !isOpened;
+                 if(isOpened){
+                     openButton.style.display = "none";
+                     hamburgerMenu.style.display = "block";
+                 }else{
+                     hamburgerMenu.style.display = "none";
+                     openButton.style.display = "inline-block";
+                 }
+            }   
+         </script>
+    </header>
+    <section class="main">
+        <div class="content-left">
+            <h1>Modern interior</h1>
+            <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+            <a href="#">Read more <i class="icon-long-arrow-right"></i></a>
+        </div>
+        <div class="content-right">
+            <div class="image">
+                <img src="img/photo1.png">
+            </div>
+            <div class="info-card">
+                <div class="profile">
+                    <div class="image-box">
+                        <img src="img/photo2.png" width="50" height="50">
+                    </div>
+                    <div class="text">
+                        <h3>Aliza Webber</h3>
+                        <p>Interior designer</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <h2>Designed in 2020 by Aliza Webber</h2>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

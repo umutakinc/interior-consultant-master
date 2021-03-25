@@ -1,0 +1,167 @@
+/* font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li,a{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #333333;
+    color: #fff;
+    padding: 4.2rem 7.7rem;
+}
+html{
+    font-size: 10px;
+}
+i{
+    font-size: 3.2rem;
+}
+header .primary-menu{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+header .primary-menu .logo{
+    font-family: 'Crimson Pro', serif;
+    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 102px;
+    height: 32px;
+    padding: 7px;
+    border: 1px solid #fff;
+}
+header .primary-menu .items{
+    display: flex;
+}
+header .primary-menu .items .item{
+    margin-left: 8.6rem;
+    padding-bottom: .8rem;
+    cursor: pointer;
+    transition-delay: .02s;
+}
+header .primary-menu .items .item:hover{
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+header .mobil-menu{
+    opacity: 0;
+}
+header .mobil-menu .hamburger-menu{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(24, 23, 25);
+}
+section.main{
+    display: flex;
+    margin-top: 153px;
+}
+section.main .content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+}
+section.main .content-left h1{
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 6.1rem;
+    margin-bottom: 4rem;
+}
+section.main .content-left p{
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 4.8rem;
+}
+section.main .content-left a{
+    display: flex;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #fff;
+    align-items: center;
+}
+section.main .content-left a i{
+    margin-left: 1.4rem;
+}
+section.main .content-right{
+    width: 821px;
+    height: 587px;
+}
+section.main .content-right .image{
+    width: 100%;
+    height: 100%;
+    padding: 24px 33px 8px 52px;
+
+}
+section.main .content-right .image img{
+    width: 100%;
+    height: 100%;
+}
+section.main .content-right .info-card{
+    width: 410px;
+    height: 189px;
+    background-color: #181719;
+    padding-top: 10px;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 215px;
+    bottom: 85px;
+}
+section.main .content-right .info-card .profile{
+    display: flex;
+}
+section.main .content-right .info-card .profile .image-box{
+    width: 85px;
+    height: 72px;
+}
+section.main .content-right .info-card .profile .image-box img{
+    border-radius: 50px;
+    margin: 11px 18px;
+}
+section.main .content-right .info-card .profile .text{
+    margin-top: 18px;
+}
+section.main .content-right .info-card .profile .text h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+section.main .content-right .info-card .profile .text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #828282;
+}
+section.main .content-right .info-card .description{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    margin-left: 12px;
+    margin-top: 25px;
+}

@@ -1,5 +1,6 @@
 body{
     padding: 1.9rem 1.2rem;
+    max-width: 375px;
 }
 header .logo{
     font-family: 'Crimson Pro', serif;

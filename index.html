@@ -44,15 +44,18 @@
             <span id="open" onclick="toggle()"><i class="icon-reorder fa-7x"></i></span>     
         </div>
         <script >
+            var body = document.body;
             var openButton = document.getElementById("open");
             var hamburgerMenu = document.getElementById("hamburgerMenu");
             var isOpened = false;
             function toggle(){
                  isOpened = !isOpened;
                  if(isOpened){
+                     body.style.overflow = "hidden";
                      openButton.style.display = "none";
                      hamburgerMenu.style.display = "block";
                  }else{
+                     body.style.overflow = "auto";
                      hamburgerMenu.style.display = "none";
                      openButton.style.display = "inline-block";
                  }
